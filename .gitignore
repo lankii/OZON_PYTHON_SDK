@@ -1,0 +1,8 @@
+# Python venv
+venv
+
+# IDE config
+.idea
+
+# Exclude testing file
+tst.py
