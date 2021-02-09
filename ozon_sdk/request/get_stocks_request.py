@@ -17,6 +17,6 @@ class GetStocksRequestV1(Request):
             "page_size": self.page_size
         }
 
-    def get_result(self) -> Union[dict, List[dict]]:
+    def get_result(self) -> Union[dict]:
         response = self._post(self.URI, self.json_payload)
         return response.json()
