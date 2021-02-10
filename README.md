@@ -12,7 +12,7 @@
                      ProductComission
 
 
-### BaseProduct
+###BaseProduct
     
     product_id: int (Default None)
     offer_id: str (Default None)
@@ -68,4 +68,4 @@ Function collects from Ozon API products with basic info like a prices, stocks, 
     :param with_stocks: Returning products will be contains stocks data. Else None for stocks parameters.
     :param with_prices: Returning products will be contains prices and commissions data. Else None for prices parameters
     :return: List of Validated BaseProduct objects.<br>
-    [[BaseProduct Object ](#Product)]
+    [BaseProduct Object](#BaseProduct)
