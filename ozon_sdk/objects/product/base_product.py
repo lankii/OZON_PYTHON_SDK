@@ -19,7 +19,7 @@ class ProductCommission:
         return self
 
 
-class Product:
+class BaseProduct:
     """
 
     """
@@ -102,3 +102,13 @@ class Product:
             if commissions:
                 self.commissions = [ProductCommission().fill_from_price_item(item) for item in commissions]
         return self
+
+    @property
+    def prepared_for_price_updating(self) -> bool:
+        # TODO: make validator for price updating
+        return True
+
+    @property
+    def prepared_for_stock_updating(self) -> bool:
+        # TODO: make validator for stock updating
+        return True
